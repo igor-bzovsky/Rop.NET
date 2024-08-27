@@ -1,0 +1,7 @@
+# Auto detect text files and perform LF normalization
+*        text=auto
+
+# unix style line endings
+*.sh text eol=lf
+*.env text eol=lf
+*.conf text eol=lf
