@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Rop.NET.BaseTypes\Rop.NET.BaseTypes.csproj" />
-  </ItemGroup>
-
 </Project>
