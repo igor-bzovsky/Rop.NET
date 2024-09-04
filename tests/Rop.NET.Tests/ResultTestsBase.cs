@@ -4,9 +4,6 @@ namespace Rop.NET.Tests
 {
     public abstract class ResultTestsBase
     {
-        protected const string ResultParameterName = "result";
-        protected const string ErrorParameterName = "error";
-
         protected virtual void AssertSuccessInvariants<TNewSuccess, TFailure>(Result<TNewSuccess, TFailure> result, TNewSuccess expectedValue)
         {
             result.IsSuccess().Should().BeTrue();

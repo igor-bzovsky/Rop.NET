@@ -2,7 +2,7 @@
 
 namespace Rop.NET
 {
-    public abstract class Result<TSuccess, TFailure>
+    public abstract partial class Result<TSuccess, TFailure>
     {
         private Result() { }
 

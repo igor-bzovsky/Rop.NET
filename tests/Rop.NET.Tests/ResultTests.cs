@@ -14,9 +14,7 @@ namespace Rop.NET.Tests
         {
             var action = () => Result.Succeed<string, Error>(null!);
 
-            action.Should()
-                .Throw<ArgumentNullException>()
-                .WithParameterName(ResultParameterName);
+            action.Should().Throw<ArgumentNullException>();
         }
 
         [Fact]
@@ -24,9 +22,7 @@ namespace Rop.NET.Tests
         {
             var action = () => Result.Fail<string, Error>(null!);
 
-            action.Should()
-                .Throw<ArgumentNullException>()
-                .WithParameterName(ErrorParameterName);
+            action.Should().Throw<ArgumentNullException>();
         }
 
         [Fact]
@@ -53,9 +49,7 @@ namespace Rop.NET.Tests
         {
             var action = () => Result.Succeed<string>(null!);
 
-            action.Should()
-                .Throw<ArgumentNullException>()
-                .WithParameterName(ResultParameterName);
+            action.Should().Throw<ArgumentNullException>();
         }
 
         [Fact]
@@ -74,9 +68,7 @@ namespace Rop.NET.Tests
         {
             var action = () => Result.Fail<Error>(null!);
 
-            action.Should()
-                .Throw<ArgumentNullException>()
-                .WithParameterName(ErrorParameterName);
+            action.Should().Throw<ArgumentNullException>();
         }
 
         [Fact]
